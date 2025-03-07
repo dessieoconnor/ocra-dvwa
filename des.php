@@ -15,4 +15,4 @@ foreach ($file_db->query($sql) as $row) {
 
     echo $employee;
 }
-echo 'tetsing';
+echo 'hello'. $POST['parama1'];
