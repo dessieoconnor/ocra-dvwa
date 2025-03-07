@@ -15,4 +15,10 @@ foreach ($file_db->query($sql) as $row) {
 
     echo $employee;
 }
-echo 'tetsing';
+$sql = 'SELECT * FROM employees WHERE employeeId = ' . $_GET['id'];
+
+foreach ($file_db->query($sql) as $row) {
+    $employee = $row['LastName'] . " - " . $row['Email'] . "\n";
+
+    echo $employee;
+}
