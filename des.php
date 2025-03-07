@@ -16,3 +16,10 @@ foreach ($file_db->query($sql) as $row) {
     echo $employee;
 }
 echo 'tetsing';
+
+$key = "mysecretkey12345"; // 16 bytes for AES-128
+$data = "Hello, World!";
+
+// Encrypt using Mcrypt (DEPRECATED)
+$encrypted = mcrypt_encrypt(MCRYPT_RIJNDAEL_128, $key, $data, MCRYPT_MODE_ECB);
+echo base64_encode($encrypted);
