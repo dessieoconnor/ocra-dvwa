@@ -1,2 +1,3 @@
 <?php
+$token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNzA5NDc4NDAwLCJleHAiOjE3MDk0ODIwMDB9.dummySignature123';
 ?>
