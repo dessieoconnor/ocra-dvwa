@@ -15,5 +15,17 @@ foreach ($file_db->query($sql) as $row) {
 
     echo $employee;
 }
-echo 'tetsing';
+
+if (NULL == $_GET['id']) $_GET['id'] = 1;
+
+$sql = 'SELECT * FROM employees WHERE employeeId = ' . $_GET['id'];
+
+foreach ($file_db->query($sql) as $row) {
+    $employee = $row['LastName'] . " - " . $row['Email'] . "\n";
+
+    echo $employee;
+}
+
+
+echo $_GET['des'];
 
