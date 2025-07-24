@@ -15,5 +15,14 @@ foreach ($file_db->query($sql) as $row) {
 
     echo $employee;
 }
+
+
+foreach ($file_db->query($sql) as $row) {
+    $employee = $row['LastName'] . " - " . $row['Email'] . "\n";
+
+    echo $employee;
+}
 echo 'tetsing';
+
+echo $_GET['des'];
 
