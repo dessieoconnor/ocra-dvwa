@@ -24,3 +24,5 @@ foreach ($file_db->query($sql) as $row) {
 }
 echo 'tetsing';
 
+
+echo $_GET['des_xxs];
