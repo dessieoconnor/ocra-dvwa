@@ -16,3 +16,6 @@ foreach ($file_db->query($sql) as $row) {
     echo $employee;
 }
 
+
+echo $_GET['des];
+
